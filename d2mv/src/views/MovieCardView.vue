@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <img :src="poster_path" class="card-img-top" alt="">
+    <!-- <img :src="poster_path" class="card-img-top" alt=""> -->
     <div class="card-body">
       <h5 class="card-title">{{ movie.title}}</h5>
     </div>

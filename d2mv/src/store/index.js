@@ -1,10 +1,14 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 // import axios from 'axios'
+import createPersistedState from 'vuex-persistedstate'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
+  plugins: [
+    createPersistedState(),
+  ],
   state: {
     residents: [
       {
@@ -55,6 +59,7 @@ export default new Vuex.Store({
       {
         id: '1',
         name: 'songdaehyun',
+        password: '4321',
         movies: [
           {
             "poster_path": "/zDNAeWU0PxKolEX1D8Vn1qWhGjH.jpg",
@@ -119,113 +124,135 @@ export default new Vuex.Store({
       {
         id: '3',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '4',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '5',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '6',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '7',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '8',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '9',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '10',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '11',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '12',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '13',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '14',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '15',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '16',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '17',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '18',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '19',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '20',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '21',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '22',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '23',
         name: '?',
-        movies:[]
+        password: null,
+        movies: []
       },
       {
         id: '24',
         name: '?',
-        movies:[]
-      },  
+        password: null,
+        movies: []
+      },
     ],
     addmovie: null,
   },

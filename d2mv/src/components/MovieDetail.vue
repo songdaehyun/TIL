@@ -28,7 +28,7 @@
         </div>  
       </div>
     </vue-final-modal>
-    <button @click="showModal = true">More Detail</button>
+    <img :src="poster_path" class="card-img-top" alt="" @click="showModal = true">
   </div>
 </template>
 

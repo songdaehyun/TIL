@@ -31,6 +31,9 @@ export default {
       results: null,
     };
   },
+  props: {
+    id: String
+  },
   methods: {
     searchMovie() {
       if (this.addmovietitle) {
@@ -57,7 +60,7 @@ export default {
     },
     AddToMovies() {
       console.log(2)
-      this.$store.dispatch("AddToMovies", this.$route.params.id);
+      this.$store.dispatch("AddToMovies", this.id);
     },
   },
 };
